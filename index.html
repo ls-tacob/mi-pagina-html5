@@ -1,22 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de Prueba</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="">
-        Bienvenidos al Desarrollo Web.
-    </h1>
-    <h3>En este sitio personalizado vamos a aprender lo siguiente:</h3>
-    <ol>
-        <li>Editores de Texto.</li>
-        <li>Navegadores web.</li>
-        <li>Servidores locales y remotos.</li>
-    </ol>
-    <h4>autor: Santiago Taco</h4>
-    <a href="https://github.com/ls-tacob"> Puedes visitar mi Git aquí</a>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenidos a superandote a ti mismo.</h1>
+      <h2>by: Santiago Taco Batson.</h2>
+      <p>Couch Personalizado</p>
+    </header>
+
+    <p>
+      En <em>Superándote a ti mismo</em> buscamos potenciar tus habilidades
+      mediante sesiones <strong>100% personalizadas</strong> y enfocadas en tus
+      metas reales.
+    </p>
+    <nav>
+      <p>puedes visitar mis proyectos en mi git Hub oficial:
+      <a href="https://github.com/ls-tacob" target="_blank"
+        >https://github.com/ls-tacob</a
+      >
+    </nav>
+    <main>
+      <h3>Policeman & development.</h3>
+      <div class="video-center">
+        <img
+          src="assets/img/batson_mentor.jpg"
+          alt="Mentor oficial del Sitio"
+          width="400"
+        />
+      </div>
+      <br />
+      <strong>
+        Seré tu mentor, y sacaré lo mejor de todas tus cualidades, por que están
+        ahí aunque ahora talvez pienses que no.
+      </strong>
+      <section class="contenedor">
+          <section>
+        <h4>En este sitio personalizado vamos a aprender lo siguiente:</h4>
+          <ol>
+            <li>Editores de Texto.</li>
+            <li>Navegadores web.</li>
+            <li>Servidores locales y remotos.</li>
+          </ol>
+          <h4>Beneficios de este programa:</h4>
+          <ul>
+            <li>Confianza personal</li>
+            <li>Disciplina diaria</li>
+            <li>Progreso profesional</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contáctame para tu primera sesión:</h4>
+          <form>
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+            <label for="correo">Correo electrónico:</label><br />
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              required
+            /><br /><br />
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+        <!-- ... formulario aquí ... -->
+
+        <section>
+          <h4>Sesiones disponibles</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Enfoque</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>08:00 - 10:00</td>
+                <td>Meditación</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>14:00 - 16:00</td>
+                <td>Lectura</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>10:00 - 12:00</td>
+                <td>acondicionamiento físico.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <h4>
+        Nota: hacer ejercicio es un privilegio que debemos apreciar, la mayoria
+        de enfermos en el hospital dieran todo por tenerlo.
+      </h4>
+      <video controls width="500" class="video-center">
+        <source src="assets/video/ejer_mentor.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </main>
+    <article>
+      <h3>Sobre mí</h3>
+      <p>
+        Soy Santiago Taco Batson, coach personal especializado en ayudarte a
+        descubrir y potenciar tus habilidades. Mi enfoque es
+        <strong>personalizado</strong> y adaptado a tus necesidades.
+      </p>
+      <p>
+        Con experiencia en desarrollo y liderazgo, te acompañaré en cada paso
+        para que <em>superes tus límites</em> y alcances tus metas.
+      </p>
+    </article>
+    <footer>
+      <p>© 2025 Santiago Taco Batson. Todos los derechos reservados.</p>
+      <p>
+        Contacto:
+        <a href="mailto:santiagotacobatson@gmail.com"
+          >santiagotacobatson@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
