@@ -1,136 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina de Prueba</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Bienvenidos a superandote a ti mismo.</h1>
-      <h2>by: Santiago Taco Batson.</h2>
-      <p>Couch Personalizado</p>
-    </header>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superándote a Ti Mismo</title>
 
-    <p>
-      En <em>Superándote a ti mismo</em> buscamos potenciar tus habilidades
-      mediante sesiones <strong>100% personalizadas</strong> y enfocadas en tus
-      metas reales.
-    </p>
-    <nav>
-      <p>puedes visitar mis proyectos en mi git Hub oficial:
-      <a href="https://github.com/ls-tacob" target="_blank"
-        >https://github.com/ls-tacob</a
-      >
-    </nav>
-    <main>
-      <h3>Policeman & development.</h3>
-      <div class="video-center">
-        <img
-          src="assets/img/batson_mentor.jpg"
-          alt="Mentor oficial del Sitio"
-          width="400"
-        />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Superándote</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formulario">Contacto</a></li>
+        </ul>
       </div>
-      <br />
-      <strong>
-        Seré tu mentor, y sacaré lo mejor de todas tus cualidades, por que están
-        ahí aunque ahora talvez pienses que no.
-      </strong>
-      <section class="contenedor">
-          <section>
-        <h4>En este sitio personalizado vamos a aprender lo siguiente:</h4>
-          <ol>
-            <li>Editores de Texto.</li>
-            <li>Navegadores web.</li>
-            <li>Servidores locales y remotos.</li>
-          </ol>
-          <h4>Beneficios de este programa:</h4>
-          <ul>
-            <li>Confianza personal</li>
-            <li>Disciplina diaria</li>
-            <li>Progreso profesional</li>
-          </ul>
-        </section>
-        <section>
-          <h4>Contáctame para tu primera sesión:</h4>
-          <form>
-            <label for="nombre">Nombre:</label><br />
-            <input type="text" id="nombre" name="nombre" required /><br /><br />
+    </div>
+  </nav>
 
-            <label for="correo">Correo electrónico:</label><br />
-            <input
-              type="email"
-              id="correo"
-              name="correo"
-              required
-            /><br /><br />
+  <!-- Encabezado -->
+  <header class="text-center my-4">
+    <h1>Bienvenidos a Superándote a Ti Mismo</h1>
+    <h2>by: Santiago Taco Batson</h2>
+    <p class="lead">Coach Personalizado</p>
+  </header>
 
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-        <!-- ... formulario aquí ... -->
+  <!-- Grid principal con cards -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/img/imagen2.jpg" class="card-img-top img-fluid" alt="Motivación" />
+          <div class="card-body">
+            <h3 class="card-title">Motivación</h3>
+            <p class="card-text">Impulsa tus metas personales y profesionales con sesiones dedicadas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/img/batson_mentor.jpg" class="card-img-top img-fluid" alt="Mentoría" />
+          <div class="card-body">
+            <h3 class="card-title">Mentoría</h3>
+            <p class="card-text">Te acompaño paso a paso para que alcances tu máximo potencial.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Progreso" />
+          <div class="card-body">
+            <h3 class="card-title">Progreso</h3>
+            <p class="card-text">Resultados reales y duraderos en cada aspecto de tu vida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section>
-          <h4>Sesiones disponibles</h4>
-          <table>
-            <thead>
-              <tr>
-                <th>Día</th>
-                <th>Horario</th>
-                <th>Enfoque</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lunes</td>
-                <td>08:00 - 10:00</td>
-                <td>Meditación</td>
-              </tr>
-              <tr>
-                <td>Miércoles</td>
-                <td>14:00 - 16:00</td>
-                <td>Lectura</td>
-              </tr>
-              <tr>
-                <td>Viernes</td>
-                <td>10:00 - 12:00</td>
-                <td>acondicionamiento físico.</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
-      <h4>
-        Nota: hacer ejercicio es un privilegio que debemos apreciar, la mayoria
-        de enfermos en el hospital dieran todo por tenerlo.
-      </h4>
-      <video controls width="500" class="video-center">
-        <source src="assets/video/ejer_mentor.mp4" type="video/mp4" />
-        Tu navegador no soporta la etiqueta de video.
-      </video>
-    </main>
-    <article>
-      <h3>Sobre mí</h3>
-      <p>
-        Soy Santiago Taco Batson, coach personal especializado en ayudarte a
-        descubrir y potenciar tus habilidades. Mi enfoque es
-        <strong>personalizado</strong> y adaptado a tus necesidades.
-      </p>
-      <p>
-        Con experiencia en desarrollo y liderazgo, te acompañaré en cada paso
-        para que <em>superes tus límites</em> y alcances tus metas.
-      </p>
-    </article>
-    <footer>
-      <p>© 2025 Santiago Taco Batson. Todos los derechos reservados.</p>
-      <p>
-        Contacto:
-        <a href="mailto:santiagotacobatson@gmail.com"
-          >santiagotacobatson@gmail.com</a
-        >
-      </p>
-    </footer>
-  </body>
+  <!-- Botón y collapse -->
+  <section class="container text-center my-4">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+      Mostrar más información
+    </button>
+    <div class="collapse mt-3" id="infoExtra">
+      <div class="card card-body">
+        El esfuerzo de hoy es el éxito de mañana. ¡No te detengas!
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section id="formulario" class="container mb-5">
+    <h4 class="mb-3">Contáctame para tu primera sesión</h4>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required />
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required />
+      </div>
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Tabla de sesiones -->
+  <section class="container mb-5">
+    <h4>Sesiones disponibles</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+          <th>Enfoque</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>08:00 - 10:00</td>
+          <td>Meditación</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>14:00 - 16:00</td>
+          <td>Lectura</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>10:00 - 12:00</td>
+          <td>Acondicionamiento físico</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Video -->
+  <section class="container mb-5 text-center">
+    <video controls width="100%" class="rounded shadow">
+      <source src="assets/video/ejer_mentor.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="container mb-5">
+    <h3>Sobre mí</h3>
+    <p>
+      Soy Santiago Taco Batson, coach personal especializado en ayudarte a descubrir y potenciar tus habilidades.
+      Mi enfoque es <strong>personalizado</strong> y adaptado a tus necesidades.
+    </p>
+    <p>
+      Con experiencia en desarrollo y liderazgo, te acompañaré en cada paso para que <em>superes tus límites</em> y alcances tus metas.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <p>© 2025 Santiago Taco Batson. Todos los derechos reservados.</p>
+    <p>
+      Contacto: 
+      <a href="mailto:santiagotacobatson@gmail.com">santiagotacobatson@gmail.com</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
