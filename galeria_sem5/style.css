@@ -1,0 +1,40 @@
+/* Estilo de la galería con grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* Todas las imágenes tienen bordes redondeados */
+.gallery-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Imagen seleccionada resaltada */
+.gallery-grid img.selected {
+    border: 3px solid #0d6efd;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.6);
+}
+
+/* Animación al agregar imagen (opcional) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.gallery-grid img {
+    animation: fadeIn 0.4s ease-in-out;
+}
