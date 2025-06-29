@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería Dinámica - Semana 5</title>
+
+  <!-- Bootstrap para mantener la coherencia visual -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Galería de Imágenes Dinámica</h2>
+
+    <!-- Formulario para ingresar URL de imagen -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <input type="url" id="imageUrl" class="form-control" placeholder="Ingresa la URL de una imagen" />
+      </div>
+      <div class="col-md-4 text-end">
+        <button id="addImageBtn" class="btn btn-success w-100">Agregar Imagen</button>
+      </div>
+    </div>
+
+    <!-- Contenedor de la galería -->
+    <div id="gallery" class="gallery-grid"></div>
+
+    <!-- Botón para eliminar imagen seleccionada -->
+    <div class="text-center mt-4">
+      <button id="deleteBtn" class="btn btn-danger">Eliminar Imagen Seleccionada</button>
+    </div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+
+  <!-- Bloque de sugerencias para probar imágenes -->
+<!-- Bloque de sugerencias para probar imágenes -->
+<section class="container mt-5">
+    <h3>Sugerencias de URLs para probar</h3>
+  
+    <div class="row g-4">
+  
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5>1. Motivación Personal</h5>
+        <ol>
+          <li><strong>Gato:</strong><br />https://placekitten.com/300/200</li>
+          <li><strong>Imagen curiosa:</strong><br />https://i.imgur.com/8Km9tLL.jpg</li>
+          <li><strong>Perro:</strong><br />https://picsum.photos/id/237/300/200</li>
+          <li><strong>Paisaje montañoso:</strong><br />https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Montañas al atardecer:</strong><br />https://cdn.pixabay.com/photo/2016/11/29/04/45/mountain-1869260_960_720.jpg</li>
+        </ol>
+      </div>
+  
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5>2. Salud y Alimentación</h5>
+        <ol>
+          <li><strong>Frutas frescas:</strong><br />https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Ensalada saludable:</strong><br />https://cdn.pixabay.com/photo/2017/01/30/13/53/salad-2020731_960_720.jpg</li>
+          <li><strong>Comida balanceada:</strong><br />https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Batido saludable:</strong><br />https://cdn.pixabay.com/photo/2016/03/05/19/02/smoothie-1238240_960_720.jpg</li>
+          <li><strong>Vegetales frescos:</strong><br />https://images.unsplash.com/photo-1516684669134-de6a8d1a03c8?auto=format&fit=crop&w=300&q=80</li>
+        </ol>
+      </div>
+  
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5>3. Fitness y Gym</h5>
+        <ol>
+          <li><strong>Entrenamiento en gimnasio:</strong><br />https://cdn.pixabay.com/photo/2016/11/18/16/39/fitness-1839387_960_720.jpg</li>
+          <li><strong>Ejercicio en casa:</strong><br />https://images.unsplash.com/photo-1554284126-2a1a3b2d5d4f?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Músculos y pesas:</strong><br />https://cdn.pixabay.com/photo/2017/08/10/04/41/muscle-2616215_960_720.jpg</li>
+          <li><strong>Levantamiento de pesas:</strong><br />https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Mancuernas:</strong><br />https://cdn.pixabay.com/photo/2018/03/13/18/18/dumbbell-3225471_960_720.jpg</li>
+        </ol>
+      </div>
+  
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5>4. Meditación y Lectura</h5>
+        <ol>
+          <li><strong>Paisaje montañoso:</strong><br />https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Montañas al atardecer:</strong><br />https://cdn.pixabay.com/photo/2016/11/29/04/45/mountain-1869260_960_720.jpg</li>
+          <li><strong>Meditación:</strong><br />https://images.unsplash.com/photo-1494949649108-0d16809b5f57?auto=format&fit=crop&w=300&q=80</li>
+          <li><strong>Meditación en bosque:</strong><br />https://cdn.pixabay.com/photo/2015/01/08/18/25/meditation-593200_960_720.jpg</li>
+          <li><strong>Lectura relajante:</strong><br />https://images.unsplash.com/photo-1486308510493-cb53a8920d9a?auto=format&fit=crop&w=300&q=80</li>
+        </ol>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+</body>
+</html>
