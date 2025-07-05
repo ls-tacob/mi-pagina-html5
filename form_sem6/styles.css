@@ -1,0 +1,109 @@
+
+body{
+    background: url('img/messi_fondo.jpg') no-repeat center center fixed;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Campo válido */
+input.valid {
+    border-color: green;
+}
+
+/* Campo inválido */
+input.invalid {
+    border-color: red;
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+/* Botones */
+.botones {
+    margin-top: 15px;
+    display: flex;
+    justify-content:space-between;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:disabled {
+    background-color: #ccc;
+}
+
+#submitBtn:not(:disabled) {
+    background-color: #28a745;
+    color: white;
+}
+/* Sobrescribir color del botón primario */
+.btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 0.5rem;
+    /* bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #e04e2b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sombra y borde redondeado para las cards */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+    body {
+        background-color: #f9f9f9;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        color: #ff5733;
+    }
+
+    .btn-primary {
+        background-color: #d94d25;
+        border-color: #d94d25;
+    }
+}
