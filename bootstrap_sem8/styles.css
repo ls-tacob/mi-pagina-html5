@@ -1,0 +1,15 @@
+/* Personalización de tabla */
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado carrusel */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Color personalizado en el footer */
+footer {
+    background-color: #222;
+}
